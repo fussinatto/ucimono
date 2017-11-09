@@ -58,3 +58,4 @@ typings/
 .env
 
 security-rules.json
+package-lock.json
