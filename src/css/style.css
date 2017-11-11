@@ -222,7 +222,7 @@ input::-moz-focus-inner {
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 body {
   background: #d4d4d4;
