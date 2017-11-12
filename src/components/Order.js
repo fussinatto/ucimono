@@ -5,6 +5,7 @@ class Order extends React.Component {
     super()
     this.renderOrder = this.renderOrder.bind(this)
   }
+
   renderOrder (key) {
     const fish = this.props.fishes[key]
     const count = this.props.order[key]
@@ -16,6 +17,7 @@ class Order extends React.Component {
       <span className="price">{formatPrice(count * fish.price)}</span>
     </li>
   }
+
   render() {
     const orderIDs = Object.keys(this.props.order);
     const total = orderIDs.reduce((prevTotal, key) => {
@@ -27,6 +29,7 @@ class Order extends React.Component {
       }
       return prevTotal
     }, 0)
+    
     return (
       <div className="order-wrap">
         <h2>Your Order</h2>
