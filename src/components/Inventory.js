@@ -25,7 +25,7 @@ class Inventory extends React.Component {
         </select>
         <textarea name="desc" placeholder="Fish desc" value={fish.desc} onChange={(e) => this.updateValue(e, key)}></textarea>
         <input name="image" type="text" placeholder="Fish image" value={fish.image} onChange={(e) => this.updateValue(e, key)}/>
-        <button>Delete Fish</button>
+        <button onClick={() => this.props.removeFish(key)}>Delete Fish</button>
       </div>
     )
   }
